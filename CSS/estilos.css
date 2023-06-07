@@ -361,7 +361,26 @@ footer{
     /* RESPONSIVE DESIGN */
 
 
-@media screen and (max-width: 500px){
-  
-   
+@media screen and (min-width: 500px){
+
+    .encabezado{
+        width: 100%;
+    }
+    .navegador{
+        width: 100%;
+    }
+    
+    #titulo{
+        width: 100%;
+    }
+
+    .containerMe{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-area: 
+        "mecarmar noe";
+    }
+
 }
+   
