@@ -395,18 +395,31 @@ footer{
 
 
     /* RESPONSIVE DESIGN */
-/* TAMAÑO TABLET DE RESPONSIVE 768px */
+/* TAMAÑO TABLET DE RESPONSIVE 500px */
 
 @media screen and (max-width: 500px){
     .bodynos{
         align-items: center;
+        width: 500px;
     }
     .headernos{
         justify-content: center;
-        width: 126%;
+        width: 124%;
+    }
+    .encabezado {
+        max-width: 500px;
+        height: 300px;
+        background-size: 110%;
+        align-items: center;
+        width: 100%;
+    }
+    .navegador ul{
+        flex-direction: column;
+        justify-content: start;
     }
     .navegador{
-        width: 126%;
+        width: 124%;
+        height: auto;
     }
     .imgNos{
         flex-direction: column;
@@ -429,7 +442,11 @@ footer{
     }
     .footernos p{
         justify-content: center;
-        width: 124%;
+        width: 120%;
     }
+}
+
+@media screen and (max-width: 768px){
+
 }
         
