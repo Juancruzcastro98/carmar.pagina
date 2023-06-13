@@ -404,12 +404,12 @@ footer{
     }
     .headernos{
         justify-content: center;
-        width: 124%;
+        width: 100%;
     }
     .encabezado {
         max-width: 500px;
         height: 300px;
-        background-size: 110%;
+        background-size: 100%;
         align-items: center;
         width: 100%;
     }
@@ -418,7 +418,7 @@ footer{
         justify-content: start;
     }
     .navegador{
-        width: 124%;
+        width: 100%;
         height: auto;
     }
     .imgNos{
@@ -442,7 +442,7 @@ footer{
     }
     .footernos p{
         justify-content: center;
-        width: 120%;
+        width: 100%;
     }
 }
 
