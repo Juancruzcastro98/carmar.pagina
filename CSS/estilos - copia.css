@@ -400,11 +400,11 @@ footer{
 @media screen and (max-width: 500px){
     .bodynos{
         align-items: center;
-        width: 500px;
+        width: 100%;
     }
     .headernos{
         justify-content: center;
-        width: 100%;
+        width: 520px;
     }
     .encabezado {
         max-width: 500px;
@@ -416,9 +416,13 @@ footer{
     .navegador ul{
         flex-direction: column;
         justify-content: start;
+        width: 100%;
+    }
+    .navegador li{
+        width: 400px;
     }
     .navegador{
-        width: 100%;
+        width: 550px;
         height: auto;
     }
     .imgNos{
@@ -432,6 +436,7 @@ footer{
         justify-content: center;
         font-size: 50px;
         margin: 0px;
+        width: 550px;
     }
     .hist{
         justify-content: center;
@@ -451,10 +456,10 @@ footer{
         align-items: center;
         width: 500px;
     }
-    /* .headernos{
+    .headercont{
         justify-content: center;
-        width: 100%;
-    } */
+        width: 500px;
+    }
     .encabezado {
         max-width: 500px;
         height: 300px;
