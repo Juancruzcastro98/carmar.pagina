@@ -3,28 +3,6 @@ html {
   font-size: 62.5%;
 }
 
-/* -------------------BUCLUES----------------------- */
-/* @for $i from 1 through 3{
-    .item--i{
-        width: 200px;
-        height: 50px * $i;
-        background-color: red
-    }
-} */
-/* ------------EACH--------- */
-/* @each $animal in perro, gato, pajaro{
-        .-animal{
-            background-image: url (..../{$animal}.png) */
-/* @mixin  flex{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.cajanueva{
-    @include flex;
-
-} */
 * {
   margin: 0;
   left: 0;
@@ -34,7 +12,7 @@ html {
 header {
   display: block;
   background-color: rgb(49, 81, 100);
-  justify-content: center;
+  justify-content: start;
   height: 100%;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -142,7 +120,7 @@ a {
   justify-content: center;
 }
 
-#titulo {
+.titulo {
   background-color: rgb(49, 81, 100);
   text-align: center;
   font-size: 50px;
@@ -165,7 +143,7 @@ a {
 }
 
 body {
-  background-color: aliceblue;
+  background-color: rgb(49, 81, 100);
 }
 
 ul li {
@@ -284,6 +262,19 @@ div button:hover {
   border-radius: 50px;
 }
 
+.horario {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  justify-content: center;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .parrafo {
   display: flex;
   justify-content: center;
@@ -342,10 +333,29 @@ div button:hover {
   grid-template-areas: "mecarmar segundoHijo tercerHijo";
 }
 
-.ProductosMegrid {
-  height: 200px;
+/* .bodynos{
+    display: grid;
+}
+.headernos{
+    display: grid;
+}
+.imgmain{
+    display: grid;
+}
+.footernos{
+    display: grid;
+    width: 100%;
 }
 
+
+.ProductosMegrid{
+    height: 200px;
+  }
+
+.cuadrosindex{
+    justify-content: center;
+}
+  */
 /* PIE DE PAGINA */
 footer {
   font-size: 2rem;
@@ -393,16 +403,15 @@ footer {
 }
 
 /* RESPONSIVE DESIGN */
-/* RESPONSIVE DESIGN */
 /* TAMAÑO TABLET DE RESPONSIVE 500px */
 @media screen and (max-width: 500px) {
   .bodynos {
     align-items: center;
-    width: 500px;
+    width: 100%;
   }
   .headernos {
     justify-content: center;
-    width: 100%;
+    width: 520px;
   }
   .encabezado {
     max-width: 500px;
@@ -414,9 +423,13 @@ footer {
   .navegador ul {
     flex-direction: column;
     justify-content: start;
+    width: 100%;
+  }
+  .navegador li {
+    width: 400px;
   }
   .navegador {
-    width: 100%;
+    width: 550px;
     height: auto;
   }
   .imgNos {
@@ -430,6 +443,7 @@ footer {
     justify-content: center;
     font-size: 50px;
     margin: 0px;
+    width: 550px;
   }
   .hist {
     justify-content: center;
@@ -448,10 +462,10 @@ footer {
     align-items: center;
     width: 500px;
   }
-  /* .headernos{
-      justify-content: center;
-      width: 100%;
-  } */
+  .headercont {
+    justify-content: center;
+    width: 500px;
+  }
   .encabezado {
     max-width: 500px;
     height: 300px;
