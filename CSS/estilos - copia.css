@@ -611,7 +611,9 @@ footer{
     .imgNos{
         flex-direction: column;
     }
-    .imgNos img{
-        width: 700px;
+    .imgmostrador{
+        display: flex;
+        justify-content: center;
     }
+  
 }
