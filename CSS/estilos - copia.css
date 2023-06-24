@@ -19,7 +19,7 @@ header{
     background-image: url(https://img.interempresas.net/fotos/1851784.jpeg);
 }
 
-.encabezado{
+header img{
     width: 500px;
     height: 300px;
     background-size: 110%;
@@ -123,12 +123,12 @@ a{
     text-align: center;
     font-size: 50px;
 }
-.puntos{
+/* .puntos{
     list-style-type: none;
     display: flex;
     justify-content: center;
     flex-direction: row;
-}
+} */
 .navegador{
     background-color:rgb(69, 123, 157);
     font-size: 20px;
@@ -136,8 +136,12 @@ a{
     text-align: center;
     top: 0;
     height: 70px;
-    
-    
+}
+.navegador ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 body{
     background-color: rgb(49, 81, 100)
@@ -265,7 +269,7 @@ div button:hover{
     justify-content: center;
 
  }
-.contenedor{
+.contenedorindex{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -316,11 +320,9 @@ div button:hover{
     font-weight: bold;
 }
 .contenedorTotal{
-    display: grid;
-    grid-template-columns: repeat(3 , 1fr);
-    grid-template-rows: auto ;
-    grid-template-areas: 
-    "mecarmar segundoHijo tercerHijo";
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 /* .bodynos{
     display: grid;
@@ -364,7 +366,7 @@ footer{
 }
 .redes{
     display: flex;
-    height: 40px;
+    height: 30px;
     padding: 10px;
     justify-content: right;
 
@@ -404,8 +406,9 @@ footer{
     }
     .headernos{
         justify-content: center;
-        width: 520px;
+        width: 500px;
     }
+
     .encabezado {
         max-width: 500px;
         height: 300px;
@@ -416,13 +419,13 @@ footer{
     .navegador ul{
         flex-direction: column;
         justify-content: start;
-        width: 100%;
+        width: 500px;
     }
     .navegador li{
         width: 400px;
     }
     .navegador{
-        width: 550px;
+        width: 500px;
         height: auto;
     }
     .imgNos{
@@ -447,45 +450,48 @@ footer{
     }
     .footernos p{
         justify-content: center;
-        width: 100%;
+        width: 480px;
     }
 }
 
 @media screen and (max-width: 500px){
     .bodycont{
-        align-items: center;
-        width: 500px;
+        width: 100%;
+        padding: 0px;
     }
     .headercont{
         justify-content: center;
         width: 500px;
     }
-    .encabezado {
+    .headercont img{
         max-width: 500px;
         height: 300px;
         background-size: 100%;
         align-items: center;
         width: 100%;
     }
+
     .navegador ul{
         flex-direction: column;
         justify-content: start;
     }
-    .navegador{
+    /* .navegador{
         width: 100%;
-        height: auto;
-    }
-   /*  .imgNos{
-        flex-direction: column;
-    }
-    .imgNos img{
-        width: 100%;
-        display: flex;
     } */
+    .mainCont{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+   
     .titulo{
         justify-content: center;
         font-size: 50px;
         margin: 0px;
+        width: 500px;
     }
     .hist{
         justify-content: center;
@@ -496,7 +502,116 @@ footer{
     }
     .footercont p{
         justify-content: center;
-        width: 100%;
+        width: 480px;
     }
 }
-        
+
+@media screen and (max-width: 500px){
+    .bodycilum{
+        width: 100%;
+    }
+    .headerilum{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .headerilum img{
+        width: 100%;
+    }
+    .mainilum div{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .mecarmar img{
+        width: 200px;
+    }
+    
+}
+
+@media screen and (max-width: 500px){
+    .headerElect{
+        width: 500px;
+    }
+    .headerElect img{
+        width: 500px;
+    }
+    .navegador{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 500px;
+    }
+
+    .mecarmar{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 460px;
+    }
+
+    .textfooter{
+        display: flex;
+        justify-content: center;
+        width: 480px;
+    }
+    .divfooter{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .container-fluid{
+        width: 100%;
+    }
+
+    .contenedorindex{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: auto;
+    }
+    .horario img{
+        width: 200px;
+    }
+    .row{
+      width: 500px;  
+    }
+    .redesSoc{
+        width: 460px;
+    }
+    
+}
+
+/* --------RESPONSIVE TABLET (768)-------- */
+@media screen and (max-width: 768px){
+    .mecarmar{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+
+    }
+    .contenedorTotal{
+       display: grid;
+       grid-template-columns: 1fr;
+       grid-template-rows: auto;
+      /*  grid-template-areas: 
+       "mecarmar mecarmar"
+       "segundoHijo segundoHijo"
+       "tercerHijo tercerHijo"; */
+    }
+    .imgmain{
+        display: flex;
+        flex-direction: column;
+    }
+    .imgNos{
+        flex-direction: column;
+    }
+    .imgNos img{
+        width: 700px;
+    }
+}
