@@ -1,3 +1,5 @@
+@import "variables";
+
 html{
     font-size: 62.5%;
 }
@@ -11,45 +13,27 @@ html{
 
 header{
     display: block;
-    background-color: rgb(49, 81, 100);
+    background-color: $colorPrincipal;
     justify-content: start;
     height: 100%;
     background-repeat: no-repeat;
     background-size: 100% 100% ;
     background-image: url(https://img.interempresas.net/fotos/1851784.jpeg);
+
+    img{
+        width: 500px;
+        height: 300px;
+        background-size: 110%;
+        align-items: center;
+    
+    }
 }
-
-header img{
-    width: 500px;
-    height: 300px;
-    background-size: 110%;
-    align-items: center;
-
-}
-
 
 /* body */
 
 a{
     text-decoration: none;
     color: black;
-}
-.imagen1{
-    width: 250px;
-    height: 200px;
-    justify-content: center ;
-}
-.imagen2{
-    width: 300px;
-    height: 200px;
-}
-.imagen3{
-    width: 300px;
-    height: 200px;
-}
-.imagen4{
-    width: 250px;
-    height: 200px;
 }
 
 .imageninicio{
@@ -70,13 +54,13 @@ a{
     height: 300px;
 }
 
-.imgmostrador{
+/* .imgmostrador{
     width: 400px;
     height: 600px;
     display: flex;
     display: block;
 
-}
+} */
 .ilumlogo{
     width: 500px;
     height: 300px;
@@ -119,32 +103,29 @@ a{
     justify-content: center;
 }
 .titulo{
-    background-color: rgb(49, 81, 100);
+    background-color: $colorPrincipal;
     text-align: center;
     font-size: 50px;
 }
-/* .puntos{
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-} */
+
 .navegador{
-    background-color:rgb(69, 123, 157);
+    background-color: $colorSecundario;
     font-size: 20px;
     text-decoration: none;
     text-align: center;
     top: 0;
     height: 70px;
+
+    ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
 }
-.navegador ul{
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-}
+
 body{
-    background-color: rgb(49, 81, 100)
+    background-color: $colorPrincipal
 }
 ul li{
     padding: 20px;
@@ -160,7 +141,7 @@ h3{
     border-radius: 500px;
     padding: 20px 30px 20px 30px;
     text-align: center;
-    background-color: rgb(69, 123, 157);
+    background-color: $colorSecundario;
 }
 
 
@@ -179,6 +160,13 @@ main{
     height: 100%;
     justify-content: space-evenly;
     padding: 10px;
+
+    img{
+            width: 400px;
+            height: 600px;
+            display: flex;
+            display: block;
+    }
 }
 
 
@@ -206,12 +194,7 @@ p{
     justify-content: center;
 
 }
-/*     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    z-index: 1;
- */
+
 
 .divME{
     display: flex;
@@ -227,21 +210,8 @@ p{
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
     border: 1px solid rgba(38, 41, 240, 0.18);
-/*     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 20px;  
-    padding: 60px;
-    text-align: center;
-    margin-bottom: 200px;
-    margin-left: 50px;
- */ }
-
-/*  .divME img{
-    height: 250px;
-    width: 150px;
 }
- */
+
 div button:hover{
     color: aliceblue;
     
@@ -324,30 +294,6 @@ div button:hover{
     justify-content: center;
     flex-wrap: wrap;
 }
-/* .bodynos{
-    display: grid;
-}
-.headernos{
-    display: grid;
-}
-.imgmain{
-    display: grid;
-}
-.footernos{
-    display: grid;
-    width: 100%;
-}
-
-
-.ProductosMegrid{
-    height: 200px;
-  }
-
-.cuadrosindex{
-    justify-content: center;
-}
-  */
-  
 
 
 /* PIE DE PAGINA */
@@ -389,8 +335,9 @@ footer{
 }
 .textfooter{
     font-size: 30px;
-    border: groove 10px rgb(69, 123, 157);
-    background-color: rgb(69, 123, 157);}
+    border: groove 10px $colorSecundario;
+    background-color: $colorSecundario;
+}
 
     
 
@@ -450,7 +397,7 @@ footer{
     }
     .footernos p{
         justify-content: center;
-        width: 480px;
+        width: 460px;
     }
 }
 
@@ -611,5 +558,4 @@ footer{
     .imgNos{
         flex-direction: column;
     }
-  
 }
