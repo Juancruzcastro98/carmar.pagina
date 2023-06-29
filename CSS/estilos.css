@@ -19,8 +19,8 @@ header {
   background-image: url(https://img.interempresas.net/fotos/1851784.jpeg);
 }
 header img {
-  width: 500px;
   height: 300px;
+  width: 500px;
   background-size: 110%;
   align-items: center;
 }
@@ -36,16 +36,16 @@ a {
 }
 
 .melogo {
-  width: 500px;
   height: 300px;
+  width: 500px;
   background-size: 96%;
   background-repeat: no-repeat;
   background-image: url(https://images.hola.com/imagenes/decoracion/20210609191095/iluminacion-casa-comoda-ideas-decoracion-mc/0-961-915/iluminacion-casa-comoda-1-a.jpg);
 }
 
 .toma20 {
-  width: 400px;
   height: 300px;
+  width: 400px;
 }
 
 /* .imgmostrador{
@@ -56,24 +56,24 @@ a {
 
 } */
 .ilumlogo {
-  width: 500px;
   height: 300px;
+  width: 500px;
   background-size: 96%;
   background-repeat: no-repeat;
   background-image: url(https://images.hola.com/imagenes/decoracion/20210609191095/iluminacion-casa-comoda-ideas-decoracion-mc/0-961-915/iluminacion-casa-comoda-1-a.jpg);
 }
 
 .noslogo {
-  width: 500px;
   height: 300px;
+  width: 500px;
   background-size: 96%;
   background-repeat: no-repeat;
   background-image: url(https://images.hola.com/imagenes/decoracion/20210609191095/iluminacion-casa-comoda-ideas-decoracion-mc/0-961-915/iluminacion-casa-comoda-1-a.jpg);
 }
 
 .contlogo {
-  width: 500px;
   height: 300px;
+  width: 500px;
   background-size: 96%;
   background-repeat: no-repeat;
   background-image: url(https://images.hola.com/imagenes/decoracion/20210609191095/iluminacion-casa-comoda-ideas-decoracion-mc/0-961-915/iluminacion-casa-comoda-1-a.jpg);
@@ -158,8 +158,8 @@ main {
   padding: 10px;
 }
 .imgNos img {
-  width: 400px;
-  height: 600px;
+  height: 400px;
+  width: 600px;
   display: flex;
   display: block;
 }
@@ -227,8 +227,8 @@ div button:hover {
 
 .horario {
   display: flex;
-  width: 300px;
   height: 300px;
+  width: 300px;
   justify-content: center;
 }
 
@@ -368,8 +368,8 @@ footer {
     width: 400px;
   }
   .navegador {
-    width: 500px;
     height: auto;
+    width: 500px;
   }
   .imgNos {
     flex-direction: column;
@@ -458,9 +458,9 @@ footer {
   }
   .mainilum div {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
-    flex-wrap: wrap;
   }
   .mecarmar img {
     width: 200px;
@@ -475,16 +475,16 @@ footer {
   }
   .navegador {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     flex-direction: row;
-    flex-wrap: wrap;
     width: 500px;
   }
   .mecarmar {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
-    flex-wrap: wrap;
     width: 460px;
   }
   .textfooter {
@@ -502,9 +502,9 @@ footer {
   }
   .contenedorindex {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
-    flex-wrap: wrap;
     width: auto;
   }
   .horario img {
